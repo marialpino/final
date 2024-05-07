@@ -202,8 +202,7 @@ body {
     margin: auto;
     text-align: center;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+
 }
 
 /*title- name*/
@@ -401,12 +400,15 @@ footer {
 }
 
 /**/
-@media (min-width: 768px) {
+@media (min-width: 600px) {
+
+    /*Style nav menu for large screens*/
     .nav-main {
         position: static;
         top: auto;
         left: auto;
         z-index: auto;
+        width: 100%;
 
     }
 
@@ -420,7 +422,7 @@ footer {
         visibility: visible;
         transform: translateX(0);
         transition: none;
-        background: linear-gradient(to right, white 0%, #ff69b494 40%, #ff69b494 75%, white 98%, white);
+        background: white;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -428,7 +430,26 @@ footer {
         padding: 2px 30px;
         margin: auto;
         border-bottom: solid 2px white;
+        box-shadow: none;
+        border-radius: 4px;
 
+    }
+
+    #nav-main-menu li a {
+        line-height: 1.5;
+        padding: 2px 55px;
+        margin: 5px 15px;
+        transition: all .25s ease-in;
+        background: rgba(255, 255, 255, 0);
+        border-top: 3px solid #ff3e9f;
+        box-shadow: none;
+
+    }
+
+    /*cards styling*/
+
+    .cards {
+        grid-column: span 6;
     }
 }
 
