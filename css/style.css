@@ -189,8 +189,12 @@ html {
 /*end of normalize.css*/
 /*Styling main home page final project*/
 body {
-    background: linear-gradient(to bottom, white 10%, #ff69b4 25%, #ff69b4 85%, white 95%, white);
-
+    background: linear-gradient(to bottom, white 10%, #ff69b4d3 25%, #ff69b4d3 85%, white 95%, white);
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.5;
 }
 
 .home .wrapper {
@@ -365,6 +369,11 @@ body {
     text-align: center;
     margin: auto;
     width: 300px;
+
+}
+
+.acard:last-child {
+    margin-bottom: 20px;
 }
 
 /*end of my work content*/
