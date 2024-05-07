@@ -189,15 +189,17 @@ html {
 /*end of normalize.css*/
 /*Styling main home page final project*/
 body {
-    background: linear-gradient(to bottom, white 15%, #ff69b4 15%, #ff69b4 85%, white 85%, white);
+    background: linear-gradient(to bottom, white 10%, #ff69b4 25%, #ff69b4 85%, white 95%, white);
 
 }
 
 .home .wrapper {
     max-width: 1000px;
-    margin: 15px auto;
+    margin: auto;
     text-align: center;
     padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 /*title- name*/
@@ -249,7 +251,7 @@ body {
     left: 0;
     z-index: 9999;
     line-height: 0;
-    background: #ff69b4;
+    background: #ff69b49d;
     border-radius: 2px;
 }
 
@@ -263,7 +265,6 @@ body {
 
 #nav-main-menu {
     display: grid;
-
     transform: translateX(-100%);
     transition: all 1s ease-in-out;
     position: absolute;
@@ -302,6 +303,7 @@ body {
 /*intro*/
 .cards {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
 }
@@ -309,7 +311,21 @@ body {
 .card {
     max-width: 100%;
     height: auto;
+    align-self: center;
 
+}
+
+.card img {
+    grid-column: span 3;
+    width: 100%;
+    height: auto;
+}
+
+.photo {
+    max-width: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .name {
@@ -326,7 +342,22 @@ body {
 
 
 /*end intro*/
+/*my work content*/
+.acards {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
 
+.acard {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+}
+
+/*end of my work content*/
 /*footer*/
 footer {
     position: absolute;
@@ -334,7 +365,9 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    background: #ff69b4;
+    padding: 5px;
+    margin: 15px auto 0;
+    background: #ff69b494;
 
 
 
@@ -355,6 +388,7 @@ footer {
         top: auto;
         left: auto;
         z-index: auto;
+
     }
 
     .nav-main-menu-toggle {
@@ -362,17 +396,20 @@ footer {
     }
 
     #nav-main-menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         visibility: visible;
         transform: translateX(0);
         transition: none;
-        background: #ff69b4;
+        background: linear-gradient(to right, white 0%, #ff69b494 40%, #ff69b494 75%, white 98%, white);
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        width: 100%;
+        width: auto;
         padding: 2px 30px;
+        margin: auto;
+        border-bottom: solid 2px white;
+
     }
 }
 
