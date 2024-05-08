@@ -189,19 +189,22 @@ html {
 /*end of normalize.css*/
 /*Styling main home page final project*/
 body {
-    background: linear-gradient(to bottom, white 10%, #ff69b4d3 25%, #ff69b4d3 85%, white 95%, white);
+    background: linear-gradient(to bottom, white 10%, #f892c5d3 25%, #f892c5d3 85%, white 95%, white);
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    font-weight: 600;
     line-height: 1.5;
 }
 
 .home .wrapper {
     max-width: 1000px;
     margin: auto;
+    color: #77083f;
     text-align: center;
-    padding: 20px;
+    padding: 0 30px;
+    background-color: rgba(255, 255, 255, 0.339);
 
 }
 
@@ -287,16 +290,19 @@ body {
     visibility: visible;
     transform: translateX(0);
     transition: all 1s ease-in-out;
+    padding: 20px 50px 20px 0px;
+    height: 80vw;
+    width: 80vw;
 }
 
 #nav-main-menu li a {
-    color: inherit;
+    color: #d05c96;
     display: flex;
     line-height: 2.5;
     padding: 2px 55px;
     margin: 5px 15px;
     transition: all .25s ease-in;
-    background: rgba(255, 255, 255, 0.516);
+    background: rgba(255, 255, 255, 0.859);
     border-bottom: 3px solid #ff3e9f;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -336,9 +342,11 @@ body {
 
 .photo {
     max-width: 60%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 60%;
+    border: 2px solid rgb(0 0 0 / 22%);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 64%);
     border-radius: 5px;
+    margin: auto;
 }
 
 .name {
@@ -385,7 +393,7 @@ footer {
     width: 100%;
     padding: 5px;
     margin: 15px auto 0;
-    background: #ff69b494;
+    background: linear-gradient(to bottom, white 10%, #f892c5d3 25%, #f892c5d3 85%, white 95%, white);
 
 
 
@@ -404,11 +412,13 @@ footer {
 
     /*Style nav menu for large screens*/
     .nav-main {
-        position: static;
-        top: auto;
-        left: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
         z-index: auto;
         width: 100%;
+        grid-column: span 3;
 
     }
 
@@ -422,38 +432,121 @@ footer {
         visibility: visible;
         transform: translateX(0);
         transition: none;
-        background: white;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        width: auto;
-        padding: 2px 30px;
         margin: auto;
-        border-bottom: solid 2px white;
+        background: linear-gradient(to bottom, #f4a1c9db 7%, white 0%, white 93%, #f4a1c9db 30%);
         box-shadow: none;
-        border-radius: 4px;
+        border-radius: 2px;
+        width: 100%;
 
     }
 
     #nav-main-menu li a {
         line-height: 1.5;
         padding: 2px 55px;
-        margin: 5px 15px;
+        margin: 5px 0px;
         transition: all .25s ease-in;
         background: rgba(255, 255, 255, 0);
-        border-top: 3px solid #ff3e9f;
+        border-bottom: none;
         box-shadow: none;
 
     }
 
-    /*cards styling*/
+    /*wrapper grid styling*/
+    .home .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        font-size: 18px;
+        margin: auto;
+    }
+
+    .home .wrapper header {
+        grid-column: span 3;
+        margin: 0;
+        padding: 0;
+        height: 0;
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            height: 0;
+        }
+    }
+
+    main {
+        grid-column: span 3;
+    }
 
     .cards {
-        grid-column: span 6;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        width: auto;
     }
+
+    .cards .name {
+        width: 100%;
+        grid-column: span 2;
+    }
+
+    .card {
+        width: 100%;
+        grid-column: span 1;
+        align-content: center;
+        text-align: justify;
+        font-weight: bold;
+
+    }
+
+    p.card {
+        padding: 0 10px;
+    }
+
+
+    .card img {
+        max-width: 70%;
+
+    }
+
+    .acards {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: auto;
+    }
+
+    .acard {
+        grid-column: span 3;
+        width: auto;
+        max-width: 65ch;
+
+    }
+
+    h2 {
+        padding: 0px;
+        margin: 5px auto;
+        border-top: 4px solid #f79dca;
+        border-bottom: 4px solid #f79dca;
+    }
+
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1000px) {
+    #nav-main-menu {
+        top: 0;
+        left: 0;
+        right: 0;
+
+    }
 
     #nav-main-menu li a {
         padding: 1px 65px;
