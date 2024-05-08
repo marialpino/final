@@ -364,6 +364,16 @@ body {
 
 /*end intro*/
 /*my work content*/
+h3 {
+    margin: auto;
+    padding: 0;
+}
+
+p {
+    padding: 10px 0px;
+    margin: auto;
+}
+
 .acards {
     margin: auto;
     display: flex;
@@ -376,11 +386,38 @@ body {
     text-align: center;
     margin: auto;
     width: 300px;
+    border-bottom: 3px solid #f57cb8d3;
 
 }
 
 .acard:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 45px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e67bb0d3;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.506);
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+
+    a {
+        color: #ffffffd3;
+    }
+}
+
+.button:hover {
+    background-color: #fe4aa4d3;
+
+    a {
+        color: white;
+    }
 }
 
 /*end of my work content*/
@@ -391,9 +428,9 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    padding: 5px;
-    margin: 15px auto 0;
-    background: linear-gradient(to bottom, white 10%, #f892c5d3 25%, #f892c5d3 85%, white 95%, white);
+    padding: 10px 5px;
+    margin: auto;
+    background-color: #f892c5d3;
 
 
 
@@ -402,7 +439,7 @@ footer {
         font-size: 18px;
 
         &:hover {
-            background-color: #f47fe49f;
+            background-color: #ffffff9f;
         }
     }
 }
@@ -484,7 +521,6 @@ footer {
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
         align-items: center;
         align-content: center;
         justify-content: center;
@@ -507,7 +543,7 @@ footer {
     }
 
     p.card {
-        padding: 0 10px;
+        font-size: 20px;
     }
 
 
@@ -527,7 +563,11 @@ footer {
     .acard {
         grid-column: span 3;
         width: auto;
-        max-width: 65ch;
+        max-width: 60ch;
+
+        p {
+            text-align: justify;
+        }
 
     }
 
