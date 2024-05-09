@@ -435,7 +435,7 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
-    padding: 10px 5px;
+    padding: 5px;
     margin: auto;
     background-color: #f892c5d3;
 
@@ -456,6 +456,111 @@ footer {
 /*style page titles placements*/
 .title {
     padding: 20px;
+}
+
+/*Contact page form and validation*/
+
+form {
+    width: auto;
+    justify-items: center;
+    margin: 10px auto 40px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+#form label {
+    margin: 5px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+.form h2 {
+    margin: 20px auto 0;
+    border: none;
+
+}
+
+.inputbttn {
+    padding: 5px;
+    font-size: 18px;
+    border: solid 2px rgb(114, 17, 74);
+    border-radius: 3px;
+    background-color: #f892c5d3;
+    color: white;
+    margin-top: 7px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    line-height: 1.5;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    float: left;
+}
+
+fieldset {
+    background-color: rgba(249, 249, 249, 0.511);
+    box-shadow: 0 2px 4px rgba(116, 69, 95, 0.64);
+    border-color: #d05c96;
+    margin: auto;
+}
+
+p,
+li {
+    max-width: 50ch;
+    display: block;
+}
+
+form input[type=text],
+form input[type=email] {
+    line-height: 1.2;
+    font-size: 18px;
+    padding: 2px 6px;
+    width: 80%;
+}
+
+legend {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+textarea {
+    width: 80%;
+}
+
+#password {
+    width: 80%;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+
+.error-parent {
+    border: solid 2px #f88379;
+    background-color: #f884798b;
+    padding: 3px;
+}
+
+.error {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #cb1a0a;
 }
 
 @media (min-width: 600px) {
@@ -590,6 +695,11 @@ footer {
         border-top: 4px solid #f79dca;
         border-bottom: 4px solid #f79dca;
     }
+
+    fieldset {
+        max-width: 700px;
+    }
+
 
 }
 
