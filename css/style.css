@@ -191,7 +191,6 @@ html {
 body {
     background: linear-gradient(to bottom, white 10%, #f892c5d3 25%, #f892c5d3 85%, white 95%, white);
     font-family: "Bodoni Moda", serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-weight: 600;
@@ -314,7 +313,8 @@ body {
 
 #nav-main-menu li a:hover,
 #nav-main-menu li a:focus {
-    background: #f0f0f0ea;
+    background: #e2a1c1d3;
+    color: white;
 }
 
 /*end nav*/
@@ -405,19 +405,15 @@ p {
     font-weight: bold;
     cursor: pointer;
     margin: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
+    color: white;
 
-    a {
-        color: #ffffffd3;
-    }
 }
 
 .button:hover {
-    background-color: #fe4aa4d3;
-
-    a {
-        color: white;
-    }
+    background-color: rgba(255, 255, 255, 0.759);
+    color: #e769a8d3;
+    border: 2px solid #e67bb0d3;
 }
 
 /*end of my work content*/
@@ -445,17 +441,23 @@ footer {
 
 
 
+
     a {
         color: inherit;
         font-size: 18px;
 
         &:hover {
             background-color: #ffffff9f;
+            transition: background-color 0.5s ease;
         }
     }
 }
 
-/**/
+/*style page titles placements*/
+.title {
+    padding: 20px;
+}
+
 @media (min-width: 600px) {
 
     /*Style nav menu for large screens*/
