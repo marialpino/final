@@ -14,3 +14,5 @@ navMainMenuToggle.addEventListener("click", (e) => {
         navMainMenuToggle.parentElement.querySelector(`#${ariaControls}`).toggleAttribute("hidden");
     }
 });
+
+
