@@ -15,4 +15,16 @@ navMainMenuToggle.addEventListener("click", (e) => {
     }
 });
 
+/*Fancybox gallery for baking page*/
+var Fancybox = Fancybox || undefined
+
+if (Fancybox) {
+    Fancybox.bind('[data-fancybox]', {
+
+    });
+
+    Fancybox.bind('[data-fancybox="gallery-a"]', {
+    });
+}
+
 
