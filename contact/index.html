@@ -48,12 +48,31 @@
                 </ul>
             </nav>
             <main>
-                <div class="cards">
-                    <div class="title">
-                        <img class="card" src="../images/bk.webp" alt="baking title">
-                    </div>
 
-
+                <div class="form">
+                    <h2>Contact Us</h2>
+                    <form novalidate id="form" method="post" action="//example.com">
+                        <fieldset>
+                            <legend>Questions? Reach out anytime!</legend>
+                            <p>
+                                <label for="fname">Enter your first name:</label>
+                                <input type="text" id="fname" name="fname" required>
+                            </p>
+                            <p>
+                                <label for="lname">Enter your last name:</label>
+                                <input type="text" id="lname" name="lname" required>
+                            </p>
+                            <p>
+                                <label for="email">Enter your email:</label>
+                                <input type="email" id="email" name="email" required placeholder="example@example.com">
+                            </p>
+                            <p>
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </p>
+                            <button class="inputbttn" type="submit">Submit</button>
+                        </fieldset>
+                    </form>
                 </div>
 
             </main>
@@ -73,7 +92,16 @@
             </footer>
 
         </div>
-        <script src="js/script.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"
+            integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.20.0/additional-methods.min.js"></script>
+
+        <script src="validation.js"></script>
     </body>
 
 </html>
