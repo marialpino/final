@@ -421,6 +421,17 @@ p {
 }
 
 /*end of my work content*/
+/*error page*/
+#errorpage h2 {
+    margin: 20px;
+    font-size: 40px;
+    color: #77083f;
+    border-top: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+
+}
+
 /*footer*/
 footer {
     position: absolute;
