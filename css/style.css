@@ -479,6 +479,10 @@ form {
 
 }
 
+.form {
+    color: #bc417e;
+}
+
 .form h2 {
     margin: 20px auto 0;
     border: none;
