@@ -428,6 +428,52 @@ p {
 
 }
 
+/*Gallery for baking page*/
+.baking {
+    align-items: center;
+    justify-content: center;
+    color: #ae3672;
+    border: #892a5e solid 2px;
+    border-radius: 3px;
+    margin: 0 auto 40px;
+    background-color: #f6cee487;
+    box-shadow: inset 2px -4px 10px 6px rgb(155 133 145 / 10%);
+
+    p {
+        max-width: 65ch;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff70;
+    box-shadow: 0 7px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.gallery img {
+    margin: 5px;
+    border: 2px solid #892a5e;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    filter: grayscale(1);
+    transition: transform .5s;
+    max-width: 100px;
+
+}
+
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
 /*footer*/
 footer {
     position: absolute;
@@ -702,6 +748,12 @@ textarea {
 
     fieldset {
         max-width: 700px;
+    }
+
+    /*baking gallery*/
+    .gallery img {
+        max-width: 200px;
+
     }
 
 
