@@ -540,6 +540,30 @@ footer {
 
 }
 
+/*WD*/
+iframe {
+    margin: 10px auto;
+    min-width: 80%;
+    height: 500px;
+}
+
+.fp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto
+}
+
+#fp {
+    max-width: 65ch;
+    color: #ae3672;
+}
+
+.wd {
+    background-color: #ffffff70;
+    margin-bottom: 30px;
+}
+
 /*Contact page form and validation*/
 
 form {
@@ -629,12 +653,6 @@ textarea {
     width: 80%;
 }
 
-#password {
-    width: 80%;
-    line-height: 1.2;
-    font-size: 18px;
-}
-
 
 .error-parent {
 
@@ -646,6 +664,41 @@ textarea {
     display: flex;
     background-color: #ff150064;
     flex-direction: row-reverse;
+}
+
+/*Resources*/
+.resources {
+    background-color: #ffffff70;
+    color: #bc417e;
+    min-height: 100vw;
+}
+
+.resources h2 {
+    margin: 20px;
+    border-top: none;
+}
+
+table {
+    border: double 2px rgb(196, 46, 134);
+    border-radius: 3px;
+    background-color: #eba5c8a5;
+    color: rgb(0, 0, 0);
+    margin: auto;
+}
+
+th,
+td {
+    border: solid 2px rgb(114, 17, 74);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(114, 17, 74, 0.444);
+}
+
+tr:nth-child(even) {
+    background-color: #f892c583;
 }
 
 @media (min-width: 600px) {
@@ -674,7 +727,7 @@ textarea {
         transition: none;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         margin: auto;
         background: linear-gradient(to bottom, #f4a1c9db 7%, white 0%, white 93%, #f4a1c9db 30%);
         box-shadow: none;
@@ -701,6 +754,7 @@ textarea {
         gap: 20px;
         font-size: 18px;
         margin: auto;
+
     }
 
     .home .wrapper header {
@@ -797,6 +851,10 @@ textarea {
         max-height: 200px;
     }
 
+    /*wd*/
+    .fp {
+        flex-direction: row;
+    }
 
 }
 

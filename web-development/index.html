@@ -45,10 +45,13 @@
 
                     <li><a href="../contact/index.html">Contact</a></li>
 
+                    <li><a href="../resources/index.html">Resources</a></li>
+
+
 
                 </ul>
             </nav>
-            <main>
+            <main class="wd">
                 <div class="cards">
                     <div class="title">
                         <img class="card" src="../images/wd.webp" alt="maria pino name">
@@ -56,8 +59,40 @@
 
 
                 </div>
+                <ol class="fp">
+                    <li>
+                        <button class="button" id="wgd" onclick="loadFrame(this); return false;"
+                            data-src="/web-graphic-design/final-project/index.html">Web Graphic Design</button>
+                    </li>
+                    <li>
+                        <button class="button" id="wfed2" onclick="loadFrame(this); return false;"
+                            data-src="/wfed2/portfolio-showcase/index.html">Web
+                            Front
+                            End Design 2</button>
+                    </li>
+                    <li>
+                        <button class="button" id="javascript" onclick="loadFrame(this); return false;"
+                            data-src="/javascript/final-project/index.html">
+                            Javascript</button>
 
+                    </li>
+                    <li>
+                        <button class="button" id="wet" onclick="loadFrame(this); return false;"
+                            data-src="../index.html">Web Emerging
+                            Technologies</button>
+                    </li>
+                </ol>
+
+                <h2>Final Projects</h2>
+                <p id="fp">Take a journey through my past final projects to discover the diverse array of concepts
+                    and
+                    skills I've been taught throughout my program. Each project reflects a unique aspect of my
+                    learning journey, showcasing the breadth and depth of knowledge I've acquired from my past
+                    courses.</p>
+                <iframe id="frame"></iframe>
             </main>
+
+
 
 
             <footer>
@@ -74,7 +109,8 @@
             </footer>
 
         </div>
-        <script src="js/script.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/nodepcks.js"></script>
     </body>
 
 </html>

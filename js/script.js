@@ -27,4 +27,11 @@ if (Fancybox) {
     });
 }
 
+////loading final projects in the iframe 
+function loadFrame(elButton) {
+    let elIframe = document.querySelector("#frame");
+    let src = elButton.getAttribute("data-src");
+    elIframe.setAttribute("src", src);
+}
+
 
