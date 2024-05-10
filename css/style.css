@@ -399,7 +399,8 @@ p {
     padding: 10px 20px;
     background-color: #e67bb0d3;
     text-decoration: none;
-    border: 2px solid rgba(255, 255, 255, 0.506);
+    border: 2px solid rgba(255, 255, 255, 0.756);
+    box-shadow: 2px 5px 9px rgb(141 137 139 / 77%);
     border-radius: 3px;
     font-size: 16px;
     font-weight: bold;
@@ -601,16 +602,15 @@ textarea {
 
 
 .error-parent {
-    border: solid 2px #f88379;
-    background-color: #f884798b;
+
     padding: 3px;
 }
 
 .error {
-    font-size: 16px;
+
     display: flex;
+    background-color: #ff150064;
     flex-direction: row-reverse;
-    color: #cb1a0a;
 }
 
 @media (min-width: 600px) {
