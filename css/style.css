@@ -505,6 +505,43 @@ footer {
     padding: 20px;
 }
 
+/*Craft page*/
+.crafting {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #ae3672;
+    background-color: #ffffff70;
+
+}
+
+.cfts {
+    max-width: 100px;
+    max-height: 100px;
+    border: solid 8px white;
+    transition: max-width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), max-height 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.cfts:hover {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.crafting p {
+
+    max-width: 65ch;
+    background-color: white;
+    margin: 3px auto;
+
+
+}
+
 /*Contact page form and validation*/
 
 form {
@@ -754,6 +791,12 @@ textarea {
     .gallery img {
         max-width: 200px;
 
+    }
+
+    /*crafts*/
+    .cfts {
+        max-width: 200px;
+        max-height: 200px;
     }
 
 
